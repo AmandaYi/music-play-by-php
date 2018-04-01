@@ -1,17 +1,7 @@
 <?php
-/**
- * Meting music framework
- * https://i-meto.com
- * https://github.com/metowolf/Meting
- * Version 1.5.2.
- *
- * Copyright 2018, METO Sheel <i@i-meto.com>
- * Released under the MIT license
- */
+namespace Qiyue;
 
-namespace Metowolf;
-
-class Meting
+class DataApiDeal
 {
     const VERSION = '1.5.2';
 
