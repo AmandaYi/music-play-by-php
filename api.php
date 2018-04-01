@@ -1,6 +1,7 @@
 <?php
  
  /**
+  * 
   *@name Api支持 
   *@autho Qiyue  [技术支持:QQ:891177434]
   *
@@ -11,7 +12,7 @@ $netease_cookie = '';
 // 站点是否是https
 define('HTTPS', false);    
 // 是否是开发模式
-define('DEBUG', false);       
+define('DEBUG', true);       
  
 
 
@@ -142,7 +143,7 @@ function checkfunc($f,$m = false) {
  * @param $default 默认值
  * @return 获取到的内容（没有则为默认值）
  */
-function getParam($key, $default='')
+function getParam($key, $default='古天乐')
 {
     return trim($key && is_string($key) ? (isset($_POST[$key]) ? $_POST[$key] : (isset($_GET[$key]) ? $_GET[$key] : $default)) : $default);
 }

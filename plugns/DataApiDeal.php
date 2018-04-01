@@ -3,7 +3,7 @@ namespace Qiyue;
 
 class DataApiDeal
 {
-    const VERSION = '1.5.2';
+    const VERSION = '2.0.1';
 
     public $raw;
     public $data;
@@ -474,8 +474,11 @@ class DataApiDeal
 
     public function playlist($id)
     {
+ 
         switch ($this->server) {
+        
             case 'netease':
+
             $api = array(
                 'method' => 'POST',
                 'url'    => 'http://music.163.com/api/v3/playlist/detail',
@@ -488,6 +491,7 @@ class DataApiDeal
                 'encode' => 'netease_AESCBC',
                 'format' => 'playlist.tracks',
             );
+             
             break;
             case 'tencent':
             $api = array(

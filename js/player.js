@@ -13,7 +13,7 @@ var mkPlayer = {
     dotshine: true,    // 是否开启播放进度条的小点闪动效果[不支持IE](true/false) *开启后会有些卡
     mdotshine: false,   // 是否开启[移动端]播放进度条的小点闪动效果[不支持IE](true/false)
     volume: 0.6,        // 默认音量值(0~1之间)
-    version: "v2.41",    // 播放器当前版本号(仅供调试)
+    version: "v3.0.0",    // 播放器当前版本号(仅供调试)
     debug: false   // 是否开启调试模式(true/false)
 };
 
@@ -336,7 +336,8 @@ function play(music) {
 
 // 我的要求并不高，保留这一句版权信息可好？
 // 保留了，你不会损失什么；而保留版权，是对作者最大的尊重。
-console.info('欢迎使用 MKOnlinePlayer!\n当前版本：'+mkPlayer.version+' \n作者：mengkun(https://mkblog.cn)\n歌曲来源于各大音乐平台\nGithub：https://github.com/mengkunsoft/MKOnlineMusicPlayer');
+console.info('欢迎使用 MKOnlinePlayer!\n当前版本：v2.41 \n作者：mengkun(https://mkblog.cn)\n歌曲来源于各大音乐平台\nGithub：https://github.com/mengkunsoft/MKOnlineMusicPlayer');
+console.info('感谢MK,很感激你解决了我的需求,在您的基础上,我进行了改造,\n当前版本：'+mkPlayer.version+' \n作者：qiyue(https://mkblog.cn)\n歌曲来源于各大音乐平台\nGithub：https://github.com/AmandaYi/music-play-by-php');
 
 // 音乐进度条拖动回调函数
 function mBcallback(newVal) {
